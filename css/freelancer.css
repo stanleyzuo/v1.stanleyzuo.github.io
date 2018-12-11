@@ -112,11 +112,11 @@ p.mb-5 {
   padding-bottom: 1rem;
   font-weight: 700;
   font-family: 'Montserrat';
-  background-color: transparent !important;
+  position: relative;
 }
 
 #mainNav .navbar-brand {
-  color: #2C3E50;
+  color: #fff;
 }
 
 #mainNav .navbar-nav {
@@ -144,7 +144,7 @@ p.mb-5 {
   font-size: 80%;
   /*padding: 0.8rem;*/
   background-color:transparent !important;
-  color:#2C3E50 !important;
+  color:#fff;
 }
 
 .fa-bars {
@@ -174,11 +174,13 @@ p.mb-5 {
     padding-bottom: 1.5rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
+    background-color: transparent !important;
   }
   #mainNav .navbar-brand {
     font-size: 2em;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
+    color:#2C3E50;
   }
   #mainNav .navbar-nav {
     margin-top: 0;
@@ -209,7 +211,7 @@ p.mb-5 {
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
@@ -339,6 +341,9 @@ header.masthead h2 {
   }
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
+  }
+  #mainNav {
+    position: fixed;
   }
 }
 
