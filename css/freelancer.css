@@ -211,10 +211,6 @@ p.mb-5 {
 header.masthead {
   padding-top: calc(6rem + 72px);
   padding-bottom: 6rem;
-  height:47rem;
-  background: url("../img/stanley.jpg") no-repeat;
-  background-size: cover;
-  background-position: -7rem;
 }
 
 header.masthead h1 {
@@ -227,11 +223,24 @@ header.masthead h2 {
   font-family: 'Lato';
 }
 
+.masthead .container {
+  visibility: visible;
+}
+
+.masthead img {
+  border-radius: 50%;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     padding-top: calc(6rem + 106px);
     padding-bottom: 6rem;
     background-position: 0 0;
+    background: url("../img/stanley.jpg") no-repeat;
+    background-size: cover;
+  }
+  .masthead .container {
+    visibility: hidden;
   }
   header.masthead h1 {
     font-size: 4.75em;
@@ -239,6 +248,15 @@ header.masthead h2 {
   }
   header.masthead h2 {
     font-size: 1.75em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .masthead .container {
+    visibility: visible;
+  }
+  header.masthead {
+    background-image: none;
   }
 }
 
