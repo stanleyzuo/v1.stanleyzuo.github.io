@@ -180,13 +180,12 @@ p.mb-5 {
     font-size: 2em;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
-    color:#2C3E50;
   }
   #mainNav .navbar-nav {
     margin-top: 0;
   }
   #mainNav .navbar-nav li.nav-item a.nav-link{
-    color:#2C3E50;
+    /*color:#2C3E50;*/
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     /*color: #fff;
@@ -213,6 +212,16 @@ p.mb-5 {
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
+  position:relative;
+}
+
+header.masthead video {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 header.masthead h1 {
@@ -241,6 +250,7 @@ header.masthead h2 {
     background-position: 0 0;
     background: url("../img/stanley.jpg") no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
   .masthead .container {
     visibility: hidden;
