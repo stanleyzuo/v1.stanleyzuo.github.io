@@ -112,7 +112,8 @@ p.mb-5 {
   padding-bottom: 1rem;
   font-weight: 700;
   font-family: 'Montserrat';
-  position: absolute;
+  background-color: transparent !important;
+  /*position: absolute;*/
 }
 
 #mainNav .navbar-brand {
@@ -213,6 +214,10 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   position:relative;
+  background-position: 0 0;
+  background: url("../img/stanley.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 header.masthead video {
@@ -236,7 +241,7 @@ header.masthead h2 {
 }
 
 .masthead .container {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .masthead img {
@@ -247,13 +252,6 @@ header.masthead h2 {
   header.masthead {
     padding-top: calc(6rem + 106px);
     padding-bottom: 6rem;
-    background-position: 0 0;
-    background: url("../img/stanley.jpg") no-repeat;
-    background-size: cover;
-    overflow: hidden;
-  }
-  .masthead .container {
-    visibility: hidden;
   }
   header.masthead h1 {
     font-size: 4.75em;
@@ -264,7 +262,7 @@ header.masthead h2 {
   }
 }
 
-@media (min-width: 1600px) {
+/*@media (min-width: 1600px) {
   .masthead .container {
     visibility: visible;
   }
@@ -277,7 +275,7 @@ header.masthead h2 {
   #mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:hover {
     color: #18BC9C;
   }
-}
+}*/
 
 .portfolio {
   margin-bottom: -15px;
