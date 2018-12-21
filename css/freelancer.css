@@ -114,7 +114,6 @@ p.mb-5 {
   font-weight: 700;
   font-family: 'Montserrat';
   background-color: transparent !important;
-  /*position: absolute;*/
 }
 
 #mainNav .navbar-brand {
@@ -149,6 +148,14 @@ p.mb-5 {
   color:#fff;
 }
 
+.lock {
+  text-align: right;
+}
+
+#lock {
+  font-size: 1.5rem;
+}
+
 .fa-bars {
   font-size:1.25rem;
 }
@@ -157,19 +164,21 @@ p.mb-5 {
   color:#18BC9C;
 }
 
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+.chevron {
   position: absolute;
   left: 50%;
   margin-left: -1rem;
   top: 90vh;
+  opacity: 0;
+  animation: fade 12s 1s backwards;
 }
 
-.bounce i {
+.chevron i {
   font-size: 2rem;
   color: #fff;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -182,6 +191,10 @@ p.mb-5 {
   60% {
     transform: translateY(-15px);
   }
+}
+
+@keyframes fade {
+  20%, 50%, 80% {opacity: 1;}
 }
 
 #mainNav.navbar-shrink {
@@ -239,13 +252,11 @@ p.mb-5 {
 }
 
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
   position:relative;
-  background-position: 0 0;
-  /*background: url("../img/stanley.jpg") no-repeat;*/
-  background-size: cover;
   overflow: hidden;
+  height: 100vh;
+  /*padding-top: 10.5rem;
+  padding-bottom: 6rem;*/
 }
 
 header.masthead video {
@@ -273,7 +284,7 @@ header.masthead h2 {
 }
 
 .masthead .container {
-  visibility: hidden;
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -342,7 +353,7 @@ header.masthead h2 {
 }
 
 @media (min-width: 576px) {
-  .bounce {
+  .lock {
     display: none;
   }
   .portfolio {
