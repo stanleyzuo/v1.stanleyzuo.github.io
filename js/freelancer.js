@@ -73,3 +73,33 @@
   });
 
 })(jQuery); // End of use strict
+
+
+var nav = document.getElementById("mainNav");
+var menu = document.getElementById("navbarResponsive");
+var lock = document.getElementById("lock");
+
+function pinNav() {
+  if (lock.className=="fas fa-lock") {
+    lock.className ="fas fa-lock-open";
+    nav.style.position ='absolute';
+  } else {
+    lock.className = "fas fa-lock";
+    nav.style.position ='fixed';
+  }
+}
+
+function changeColor(){
+  if (menu.className=="collapse navbar-collapse" || menu.className=="navbar-collapse collapse"){
+    nav.style.background ='#2C3E50';
+  } else {
+    nav.style.background = 'transparent';
+  }
+}
+
+function brandClick(){
+  if (menu.className=="navbar-collapse collapse show"){
+    nav.style.background ='transparent';
+  }
+}
+

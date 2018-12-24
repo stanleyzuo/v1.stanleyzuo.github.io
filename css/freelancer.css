@@ -113,7 +113,7 @@ p.mb-5 {
   padding-bottom: 1rem;
   font-weight: 700;
   font-family: 'Montserrat';
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 #mainNav .navbar-brand {
