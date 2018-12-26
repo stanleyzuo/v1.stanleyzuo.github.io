@@ -25,6 +25,25 @@
     }
   });
 
+  // Change nav bar bg color and rotate toggle icon on menu expand
+  $(".nav-link, #bars").click(function(){
+    if ($(".navbar-toggler").attr("aria-expanded") == "false") {
+      $("#mainNav").addClass("bg-secondary");
+      $("#bars").addClass("fa-rotate-90 color-primary");
+    } else {
+      $("#mainNav").removeClass("bg-secondary");
+      $("#bars").removeClass("fa-rotate-90 color-primary");
+    }
+  });
+
+  //Remove bg color and icon rotate on navbar brand click
+  $(".navbar-brand").click(function() {
+    if ($(".navbar-toggler").attr("aria-expanded") == "true") {
+      $("#mainNav").removeClass("bg-secondary");
+      $("#bars").removeClass("fa-rotate-90 color-primary");
+    }
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -72,34 +91,11 @@
     });
   });
 
+  // Toggle floating nav
+  $("#lock").click(function(){
+    $("#lock").toggleClass("fa-lock fa-lock-open");
+    $("#mainNav").toggleClass("fixed");
+  });
+
 })(jQuery); // End of use strict
-
-
-var nav = document.getElementById("mainNav");
-var menu = document.getElementById("navbarResponsive");
-var lock = document.getElementById("lock");
-
-function pinNav() {
-  if (lock.className=="fas fa-lock") {
-    lock.className ="fas fa-lock-open";
-    nav.style.position ='absolute';
-  } else {
-    lock.className = "fas fa-lock";
-    nav.style.position ='fixed';
-  }
-}
-
-function changeColor(){
-  if (menu.className=="collapse navbar-collapse" || menu.className=="navbar-collapse collapse"){
-    nav.style.background ='#2C3E50';
-  } else {
-    nav.style.background = 'transparent';
-  }
-}
-
-function brandClick(){
-  if (menu.className=="navbar-collapse collapse show"){
-    nav.style.background ='transparent';
-  }
-}
 

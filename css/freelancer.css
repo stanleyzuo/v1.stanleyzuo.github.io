@@ -153,7 +153,11 @@ p.mb-5 {
 }
 
 #lock {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.fixed {
+  position: absolute;
 }
 
 .fa-bars {
@@ -482,6 +486,10 @@ a:focus, a:hover, a:active {
 
 .btn {
   border-width: 2px;
+}
+
+.color-primary {
+  color: #18BC9C;
 }
 
 .bg-primary {
