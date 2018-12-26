@@ -146,6 +146,7 @@ p.mb-5 {
   /*padding: 0.8rem;*/
   background-color:transparent !important;
   color:#fff;
+  outline:none;
 }
 
 .lock {
@@ -172,9 +173,9 @@ p.mb-5 {
   position: absolute;
   left: 50%;
   margin-left: -1rem;
-  top: 90vh;
+  top: 85vh;
   opacity: 0;
-  animation: fade 12s 1s backwards;
+  animation: fade 8s 1s backwards;
 }
 
 .chevron i {
