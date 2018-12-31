@@ -72,6 +72,7 @@ section h2 {
 
 p.mb-5 {
   color:#fff;
+  text-align: left;
 }
 
 @media (min-width: 992px) {
@@ -159,6 +160,10 @@ p.mb-5 {
 
 .fixed {
   position: absolute;
+}
+
+.resume {
+  display: none;
 }
 
 .fa-bars {
