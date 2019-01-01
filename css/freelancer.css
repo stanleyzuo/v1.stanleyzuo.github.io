@@ -98,7 +98,6 @@ p.mb-5 {
   z-index: 1042;
   right: 1rem;
   bottom: 1rem;
-  display: none;
 }
 
 .scroll-to-top a {
@@ -106,7 +105,6 @@ p.mb-5 {
   height: 3.5rem;
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
-  display:none !important;
 }
 
 #mainNav {
@@ -144,7 +142,6 @@ p.mb-5 {
 
 #mainNav .navbar-toggler {
   font-size: 80%;
-  /*padding: 0.8rem;*/
   background-color:transparent !important;
   color:#fff;
   outline:none;
@@ -160,10 +157,6 @@ p.mb-5 {
 
 .fixed {
   position: absolute;
-}
-
-.resume {
-  display: none;
 }
 
 .fa-bars {
@@ -236,17 +229,6 @@ p.mb-5 {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav li.nav-item a.nav-link{
-    /*color:#2C3E50;*/
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    /*color: #fff;
-    background: #18BC9C;*/
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    /*color: #fff;
-    background: #18BC9C;*/
-  }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -265,8 +247,6 @@ header.masthead {
   position:relative;
   overflow: hidden;
   height: 100vh;
-  /*padding-top: 10.5rem;
-  padding-bottom: 6rem;*/
 }
 
 header.masthead video {
@@ -293,10 +273,6 @@ header.masthead h2 {
   margin-top: 2.5rem;
 }
 
-.masthead .container {
-  display: none;
-}
-
 @media (min-width: 992px) {
   header.masthead {
     padding-top: calc(6rem + 106px);
@@ -310,21 +286,6 @@ header.masthead h2 {
     font-size: 1.75em;
   }
 }
-
-/*@media (min-width: 1600px) {
-  .masthead .container {
-    visibility: visible;
-  }
-  header.masthead {
-    background-image: none;
-  }
-  #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link:hover {
-    color: #18BC9C;
-  }
-}*/
 
 .portfolio {
   margin-bottom: -15px;
@@ -512,6 +473,10 @@ a:focus, a:hover, a:active {
 
 .text-secondary {
   color: #2C3E50 !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .btn-primary {
